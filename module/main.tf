@@ -42,5 +42,6 @@ resource "azurerm_function_app" "example" {
  
   source_control {
     repo_url = "https://github.com/prexxeta/app-test.git"
+    branch = "main"
   }
 }
