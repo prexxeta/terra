@@ -57,9 +57,4 @@ resource "azurerm_function_app" "example" {
   storage_account_access_key = azurerm_storage_account.example.primary_access_key
   os_type                    = "linux"
   version                    = "~4"
- 
-  source_control {
-    repo_url = "https://github.com/prexxeta/app-test.git"
-    branch = "main"
-  }
 }
